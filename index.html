@@ -11,24 +11,40 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Noto+Sans+Mono:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	
+	<script src="https://kit.fontawesome.com/f49eb91832.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	
 </head>
 
 <body>
 
 <header>
-    <div>
-        <img src="images/pixelized.png" />     
+    <div class="first">
+        <img src="images/pixelized.gif" />     
     </div>
     <div>
         <p> 
-            <span style="font-size: 4em; font-weight:100;"><span style="font-family: 'Catamaran', sans-serif;color: #00897B;">&gt; </span>Hi, I am</span><br />
-            <span style="font-family: 'Noto Sans Mono'; font-size: 5em; "><span style="font-family: 'Catamaran', sans-serif;color: #00897B;">&gt; </span>Nikolai<span class="cursor">_</span></span>
+            <span style="font-size: 4em;font-weight: 100;"><span style="font-family: 'Catamaran', sans-serif;color: #00897B;">&gt; </span>Hi, I am<br /></span>
+            <span style="font-family: 'Noto Sans Mono';"><span style="font-family: 'Catamaran', sans-serif;color: #00897B;font-size: 5em;">&gt; </span><span class="type" style="--n:7">Nikolai.</span></span>
         </p>
     </div>
 </header>     
-<aside>
-
+<aside class="fadein">
+    <div>
+    	<a href="https://github.com/D1noFuzi"><i class="fa-brands fa-square-github fa-3x"></i></a>
+    	<a href="./cv/CV_academia_website.pdf"><i class="ai ai-cv-square ai-3x"></i></a>
+    	<a href="https://twitter.com/DinoFuzi"><i class="fa-brands fa-square-twitter fa-3x"></i></a>
+    	<a href="https://scholar.google.de/citations?user=XwzlnZoAAAAJ&hl=de"><i class="ai ai-google-scholar-square ai-3x"></i></a>
+    	<a href="https://ch.linkedin.com/in/nikolai-kalischek"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+    </div>
 </aside>
 
+<script>
+	$(document).ready(function () {
+		$('.first img').attr('src', 'images/pixelized.gif?' + (Math.random() + 1).toString(36).substring(7));
+	});
+</script>
 </body>
 </html>                    

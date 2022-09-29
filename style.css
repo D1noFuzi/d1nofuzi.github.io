@@ -15,26 +15,88 @@ body {
 	position: absolute;
 }
 
+.fadein {
+	animation: fadein 2s;
+}
+
 header {
     display: flex; 
     width: 100%;
     justify-content: center;
     flex-direction: row;
 }
+aside {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+aside div {
+	margin-top: 50px;
+	min-width: 256px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+aside div i {
+	text-decoration: none;
+	color: #CFD8DC;
+}
+
+aside div i {
+	transition: 0.3s;
+}
+.fa-square-github:hover {
+	color: #EF5350;
+}
+.ai-cv-square:hover {
+	color: #AB47BC;
+}
+.fa-square-twitter:hover {
+	color: #42A5F5;
+}
+.ai-google-scholar-square:hover {
+	color: #9CCC65;
+}
+.fa-linkedin:hover {
+	color: #FFCA28;
+}
 
 header div p {
     display: flex;
     flex-direction: column; 
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 30px;
     height: 100%;
-    line-height: 6em;
+    line-height: 5em;
 }
 
-.cursor {
-    font-family: 'Catamaran', sans-serif;
-    animation: cursor 1.25s none infinite;
-    color: #90A4AE;
+.type {
+	color: #0000;
+  font-size: 4em;
+  font-weight:100;
+  background:
+    linear-gradient(-90deg,#CFD8DC 5px,#0000 0) 5px 0,
+    linear-gradient(#CFD8DC 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .9s infinite steps(1),   
+   t calc(var(--n)*.3s) steps(var(--n)) forwards;
 }
 
-@keyframes cursor { 50% { opacity: 0; } }
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
