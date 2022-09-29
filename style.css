@@ -1,3 +1,40 @@
-body {
-    background: #212121;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #212121;
+	color: #CFD8DC;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+header {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header div p {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    padding-left: 30px;
+    height: 100%;
+    line-height: 6em;
+}
+
+.cursor {
+    font-family: 'Catamaran', sans-serif;
+    animation: cursor 1.25s none infinite;
+    color: #90A4AE;
+}
+
+@keyframes cursor { 50% { opacity: 0; } }
